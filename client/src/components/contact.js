@@ -28,77 +28,7 @@ const Contact = () => {
       </h1>
 
       <div className="contact_container">
-        <div className="contact_item animate__animated animate__fadeInLeft">
-          <Card className={classes.root} variant="outlined">
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Devansh Gera"
-                height="300"
-                image="https://avatars0.githubusercontent.com/u/47374577?s=460&u=6574ff78e4b980daf15da4d91a18fb396142b5f9&v=4"
-                title="Devansh Gera"
-              />
-              <CardContent className="contact_card">
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  style={{ fontFamily: "Mulish" }}
-                >
-                  Devansh Gera
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="p"
-                  style={{ fontFamily: "Poppins" }}
-                >
-                  Web Developer at NCS
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions
-              style={{
-                textAlign: "right",
-                display: "flex",
-                justifyContent: "space-between",
-                paddingLeft: "10vh",
-                paddingRight: "10vh"
-              }}
-            >
-              <div>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/devansh-gera-62a2bb16b/"
-                >
-                  <img
-                    src="https://image.flaticon.com/icons/svg/174/174857.svg"
-                    alt="linkedin"
-                    style={{ height: "5vh", width: "5vh" }}
-                  />
-                </a>
-              </div>
-              <div>
-                <a target="_blank" href="https://github.com/Devforlife07">
-                  <img
-                    src="https://image.flaticon.com/icons/svg/1051/1051275.svg"
-                    alt="linkedin"
-                    style={{ height: "5vh", width: "5vh" }}
-                  />
-                </a>
-              </div>
-              <div>
-                <a target="_blank" href="https://instagram.com/devforlife07">
-                  <img
-                    src="https://image.flaticon.com/icons/svg/733/733558.svg"
-                    alt="linkedin"
-                    style={{ height: "5vh", width: "5vh" }}
-                  />
-                </a>
-              </div>
-            </CardActions>
-          </Card>
-        </div>
+      
         <div className="contact_item animate__animated animate__fadeInLeft">
           <Card className={classes.root} variant="outlined">
             <CardActionArea>

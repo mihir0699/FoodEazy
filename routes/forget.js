@@ -45,7 +45,7 @@ router.post("/", async(req, res)=>{
 		  let name = user.name;
 
 		  var mailOptions = {
-		        from: "food.eazy1@gmail.com",
+		        from: "mailfoodeazy@gmail.com",
 		        to: `${email}`	,
 		        subject: "Reset your password for Food Eazy",
 		        text: "That was easy!",

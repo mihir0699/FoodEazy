@@ -56,12 +56,12 @@ const MenuList = (item) => {
           </Card.Title>
           {type === "Veg" || type === "veg" ? (
             <img
-              src="https://img.icons8.com/color/22/000000/vegetarian-food-symbol.png"
+              src={require('../images/vegetarian-food-symbol.png')}
               alt="Veg"
             />
           ) : (
             <img
-              src="https://img.icons8.com/color/22/000000/non-vegetarian-food-symbol.png"
+              src={require('../images/non-vegetarian-food-symbol.png')}
               alt="non-veg"
             />
           )}
