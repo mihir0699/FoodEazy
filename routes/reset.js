@@ -8,7 +8,6 @@ const {
 	validationResult
 } = require("express-validator");
 router.get("/", async (req, res) => {
-	console.log(req.query)
 	let code = req.query.code;
 	console.log("CODE");
 	// console.log(code)
