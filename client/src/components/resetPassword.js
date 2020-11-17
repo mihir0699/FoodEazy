@@ -71,7 +71,7 @@ const ResetPassword = (props) => {
           }, 3000);
         }
       } catch (e) {
-        setStatus({ val: 1, msg: "Password should be combination of one uppercase , one lower case, one special char, one digit and min 8 , max 20 char long", type: "fail" });
+        setStatus({ val: 1, msg: "Password should be combination of one uppercase , one lower case, one special char, one digit and min 8 , max 20 char long", type: "red" });
         let id = setTimeout(() => {
           setStatus({ val: 0, msg: "", type: "" });
           clearTimeout(id);
