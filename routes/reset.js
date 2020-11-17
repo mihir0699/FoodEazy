@@ -9,8 +9,6 @@ const {
 } = require("express-validator");
 router.get("/", async (req, res) => {
 	let code = req.query.code;
-	console.log("CODE");
-	// console.log(code)
 	try {
 		let data = await Forget.findOne({
 			code: code
@@ -24,7 +22,6 @@ router.get("/", async (req, res) => {
 			msg: "Unauthorized"
 		})
 	} catch (e) {
-		console.log("yeah")
 		res.status(404).send({
 			msg: "Unauthorized"
 		})
