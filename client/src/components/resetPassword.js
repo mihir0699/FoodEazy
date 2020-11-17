@@ -65,13 +65,13 @@ const ResetPassword = (props) => {
             type: "darkGreen"
           });
           let id = setTimeout(() => {
-            setStatus({ val: 0, msg: "", type: "" });
+            setStatus({ val: 0, msg: "Password should be combination of one uppercase , one lower case, one special char, one digit and min 8 , max 20 char long", type: "fail" });
             props.history.push("/");
             clearTimeout(id);
           }, 3000);
         }
       } catch (e) {
-        setStatus({ val: 1, msg: "Server Error", type: "red" });
+        setStatus({ val: 1, msg: "", type: "red" });
         let id = setTimeout(() => {
           setStatus({ val: 0, msg: "", type: "" });
           clearTimeout(id);
