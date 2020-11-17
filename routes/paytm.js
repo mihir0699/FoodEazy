@@ -29,7 +29,7 @@ Router.post("/", auth, async (req, res) => {
     (params["CUST_ID"] = req.user.id.toString()),
     (params["INDUSTRY_TYPE_ID"] = "Retail"),
     (params["TXN_AMOUNT"] = req.body.txn_amount.toString()),
-    (params["CALLBACK_URL"] = "https://foodeazy.herokuapp.com/api/paytm/success"),
+    (params["CALLBACK_URL"] = "https://foodeazy-web.herokuapp.com/api/paytm/success"),
     (params["EMAIL"] = req.body.user.email.toString()),
     (params["MOBILE_NO"] = req.body.user.number.toString()));
 
@@ -80,7 +80,7 @@ Router.post("/success", async (req, res) => {
     await Order.deleteOne({
       order_id: id,
     });
-    res.redirect("https://foodeazy.herokuapp.com/fail");
+    res.redirect("https://foodeazy-web.herokuapp.com/fail");
 
   } else {
     let order = await Order.findOne({
@@ -128,7 +128,7 @@ Router.post("/success", async (req, res) => {
           },
           update
         );
-        res.redirect("https://foodeazy.herokuapp.com/success?orderid=" + body.ORDERID)
+        res.redirect("https://foodeazy-web.herokuapp.com/success?orderid=" + body.ORDERID)
       }
     });
 
