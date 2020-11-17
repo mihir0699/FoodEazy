@@ -32,7 +32,7 @@ router.post("/", async(req, res)=>{
 		else
 		{
 			let code = shortid.generate();
-		  let link = `https::/foodeazy.herokuapp.com/api/forget/${code}`;
+		  let link = `https://foodeazy-web.herokuapp.com/api/forget/${code}`;
 		  Forget.findOneAndDelete({email}, (err)=>{
 		  	if(err)
 		  		console.log(err);
