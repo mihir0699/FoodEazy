@@ -5,25 +5,24 @@ import AuthContext from "../context/auth/authContext";
 import CartContext from "../context/cart/cartContext";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import Alert from "./Alert";
-import removeAuthToken from "../context/auth/removeAuthToken"
+import removeAuthToken from "../context/auth/removeAuthToken";
 import LoadingContext from "../context/loading/loadingContext";
 import "../auth.css";
 // import { USER_LOADED } from "../context/types";
 // import productContext from "../context/products/productsContext";
 const Auth = (props) => {
-  const { register, login, userLoaded, isAuthenticated } = useContext(
-    AuthContext
-  );
+  const { register, login, userLoaded, isAuthenticated } =
+    useContext(AuthContext);
   const loadingContext = useContext(AuthContext).loading;
   useEffect(() => {
     console.log(loadingContext);
     if (loadingContext) {
       return setLoading(1);
-    }
-    else{
-       removeAuthToken();
+    } else {
+      removeAuthToken();
       //  localStorage.removeItem("token");
-    return setLoading(0);}
+      return setLoading(0);
+    }
   }, [loadingContext]);
   useEffect(() => {
     console.log(loadingContext);
@@ -33,7 +32,7 @@ const Auth = (props) => {
       setLoading(userLoaded());
       setLoading(0);
     }
-   
+
     if (!isAuthenticated) return setLoading(0);
 
     if (isAuthenticated === true) {
@@ -237,7 +236,7 @@ const Auth = (props) => {
                 </button>
               </div>
               <img
-                src={require("../images/log.svg")}
+                src={require("../images/register.svg")}
                 className="image"
                 alt=""
               />
@@ -258,7 +257,7 @@ const Auth = (props) => {
                 </button>
               </div>
               <img
-                src={require("../images/register.svg")}
+                src={require("../images/logo.svg")}
                 className="image"
                 alt=""
               />
