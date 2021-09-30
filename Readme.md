@@ -4,6 +4,7 @@
 Food Eazy, is an online platform to order food and avoiding the hassle of going out or paying in cash. The users can opt for home delivery or take away as per thier choice and can pay thorugh cash or online methods (PayTM). In the times of COVID-19 where social distancing is such an important measure we think our website can help restaurants and customers.
 
 **Project Link** - ***https://foodeazy-web.herokuapp.com/***
+**Demo Video** - ***https://www.youtube.com/watch?v=NvLRpNzKYss***
 
 
 
@@ -25,21 +26,24 @@ Food Eazy, is an online platform to order food and avoiding the hassle of going 
  - Add new dishes
  - Delete dishes
  ## Screenshots
- ### Login Page![enter image description here](https://raw.githubusercontent.com/Devforlife07/foodeazy/master/readme_images/login.png?token=ALT5AMAOLRKFR423UUHLK6C7KJJ4Y)
-### Email Verify Page![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/verify.png?token=ALT5AMCAUZLVKWU4UFAGZVC7KJKEG)
+ ### Login Page
+ ![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/login.png?token=ALT5AMEK4CX7HVYASAKMCP3BL22BY)
+### Email Verify Page
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/verify.png?token=ALT5AMFPEOQAAI7VQVV56XTBL22EA)
 ### Home Page
-![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/menu.png?token=ALT5AMAG4JWL7EOHY2IT7JC7KJKAQ)
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/menu.png?token=ALT5AMA2CGEZZGVVZ2DJPE3BL22FW)
 
 ### Cart
-![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/cart.png?token=ALT5AMCPL6C2W723CZYJZZK7KJKYY)
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/cart.png?token=ALT5AMHY64MUDVC5BWYDE6LBL22HC)
+
 ### Checkout
-![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/checkout.png?token=ALT5AMHX44VS5BX2PHTDSY27KJK4K)
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/checkout.png?token=ALT5AMF45WBP3N4WOPY3G4LBL22IU)
 ### Contact Us
 ![enter image description here](https://raw.githubusercontent.com/Devforlife07/FoodEazy/master/readme_images/contact_us.png)
 ### Add Dish (Admin)
-![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/add_dish.png?token=ALT5AMAOEZ2YQ2ECJJMYZCC7KJK6I)
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/add_dish.png?token=ALT5AMHASSDL3WCV2BVKP4DBL22JW)
 ### Delete Dish (Admin)
-![enter image description here](https://raw.githubusercontent.com/mihir0699/foodeazy/master/readme_images/delete_items.png?token=ALT5AMHLZNKOIMXWOKUKY7K7KJLCE)
+![enter image description here](https://raw.githubusercontent.com/mihir0699/FoodEazy/master/readme_images/delete_items.png?token=ALT5AMFDKCVU3E44IGHROLDBL22LA)
 ## Tech Stack 💻
 
  - [React.js](https://reactjs.org/)
