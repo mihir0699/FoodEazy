@@ -15,7 +15,6 @@ const Auth = (props) => {
     useContext(AuthContext);
   const loadingContext = useContext(AuthContext).loading;
   useEffect(() => {
-    console.log(loadingContext);
     if (loadingContext) {
       return setLoading(1);
     } else {
@@ -24,9 +23,7 @@ const Auth = (props) => {
       return setLoading(0);
     }
   }, [loadingContext]);
-  useEffect(() => {
-    console.log(loadingContext);
-  }, [loadingContext]);
+
   useEffect(() => {
     if (!isAuthenticated && localStorage.getItem("token")) {
       setLoading(userLoaded());
@@ -37,7 +34,7 @@ const Auth = (props) => {
 
     if (isAuthenticated === true) {
       setLoading(1);
-      console.log(props);
+
       props.history.push("/");
       // loadItems();
       loadCart();
@@ -243,15 +240,15 @@ const Auth = (props) => {
             </div>
             <div className="panel right-panel">
               <div className="content">
-                <h3 style={{ "font-family": "poppins" }}>One of us ?</h3>
-                <p style={{ "font-family": "poppins" }}>
+                <h3 style={{ fontFamily: "poppins" }}>One of us ?</h3>
+                <p style={{ fontFamily: "poppins" }}>
                   Then Sign In and get Started!
                 </p>
                 <button
                   className="btn transparent"
                   onClick={clickHandle}
                   id="sign-in-btn"
-                  style={{ "font-family": "poppins" }}
+                  style={{ fontFamily: "poppins" }}
                 >
                   Sign in
                 </button>

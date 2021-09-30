@@ -53,7 +53,6 @@ const Menu = (props) => {
       setFilter(items);
     }
   };
- 
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -119,26 +118,27 @@ const Menu = (props) => {
       ) : (
         ""
       )}
-      {email === true ? 
-            <Toast
-            className="animate__animated animate__fadeInRight"
-            autohide
-            style={{ position: "fixed", right: "0", zIndex: "9899899" }}
+      {email === true ? (
+        <Toast
+          className="animate__animated animate__fadeInRight"
+          autohide
+          style={{ position: "fixed", right: "0", zIndex: "9899899" }}
+        >
+          <Toast.Header
+            style={{
+              background: "red",
+              color: "white",
+              fontWeight: "bold",
+            }}
           >
-            <Toast.Header
-              style={{
-                background: "red",
-                color: "white",
-                fontWeight: "bold",
-              }}
-            >
-              <strong className="mr-auto">Not Verified</strong>
-              {/* <small>2 seconds ago</small> */}
-            </Toast.Header>
-            <Toast.Body>Your Email Is Not Verified</Toast.Body>
-          </Toast>
-
-      : ""}
+            <strong className="mr-auto">Not Verified</strong>
+            {/* <small>2 seconds ago</small> */}
+          </Toast.Header>
+          <Toast.Body>Your Email Is Not Verified</Toast.Body>
+        </Toast>
+      ) : (
+        ""
+      )}
       <div
         className="mobileNav"
         style={{ position: "sticky", top: "55px", zIndex: "100" }}
@@ -163,23 +163,21 @@ const Menu = (props) => {
         </InputGroup>
       </div>
       {loading1 || loading2 ? (
-         <div
-         style={{
-           width: "100%",
-           display: "flex",
-           height: "100vh",
-           alignItems: "center",
-           justifyContent: "center",
-           zIndex: "23444898429"
-         }}
-       >
-         <img src={require("../images/Spinner.gif")} alt="loader" />
-       </div>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            height: "100vh",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: "23444898429",
+          }}
+        >
+          <img src={require("../images/Spinner.gif")} alt="loader" />
+        </div>
       ) : (
         <>
-          <div className="sortButton"
-          
-          >
+          <div className="sortButton">
             <Dropdown>
               <Dropdown.Toggle
                 variant="primary"
@@ -249,13 +247,12 @@ const Menu = (props) => {
             <span
               className="fa-stack fa-5x has-badge fa-sm"
               data-count={total_q}
-              style={{marginRight : '0.5rem', marginBottom : '0.5rem'}}
+              style={{ marginRight: "0.5rem", marginBottom: "0.5rem" }}
             >
-             <Link to="/cart" className="cart-icon">
+              <Link to="/cart" className="cart-icon">
                 <img
                   src="https://image.flaticon.com/icons/svg/630/630746.svg"
                   alt="cart"
-                  
                 />
               </Link>
             </span>

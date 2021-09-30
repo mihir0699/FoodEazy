@@ -28,10 +28,13 @@ const AuthState = (props) => {
         },
       };
       const res = await axios.get("/api/login", config);
-      console.log(res);
+
       dispatch({
         type: "USER_LOADED",
         payload: res.data,
+      });
+      dispatch({
+        type: "REMOVE_LOADING",
       });
       setTimeout(() => {
         dispatch({
@@ -41,9 +44,12 @@ const AuthState = (props) => {
       return 0;
     } catch (err) {
       // console.log(err.response.data);
-      localStorage.removeItem("token")
+      localStorage.removeItem("token");
       dispatch({
         type: "AUTH_ERROR",
+      });
+      dispatch({
+        type: "REMOVE_LOADING",
       });
 
       return 0;
@@ -69,7 +75,7 @@ const AuthState = (props) => {
         type: "REGISTER_FAIL",
         payload: err.response,
       });
-      console.log(err.response);
+
       setTimeout(
         () =>
           dispatch({
@@ -85,9 +91,10 @@ const AuthState = (props) => {
         "Content-Type": "application/json",
       },
     };
+
     try {
       const res = await axios.post(
-        "https://foodeazy.herokuapp.com/api/login",
+        "https://foodeazy-web.herokuapp.com/api/login",
         formData,
         config
       );
@@ -96,6 +103,7 @@ const AuthState = (props) => {
         type: "LOGIN_SUCCESS",
         payload: res.data,
       });
+
       // console.log(res.data);
       userLoaded();
       setTimeout(() => {
@@ -105,13 +113,15 @@ const AuthState = (props) => {
       }, 3000);
       return 0;
     } catch (err) {
-      console.log(err.response);
       if (!err.response) {
         alert("Connection Cannot Be Made to Server");
       } else {
         dispatch({
           type: "LOGIN_FAIL",
           payload: err.response,
+        });
+        dispatch({
+          type: "REMOVE_LOADING",
         });
         // console.log(err.response.data.errors[0].msg);
         setTimeout(

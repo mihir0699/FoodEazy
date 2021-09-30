@@ -18,12 +18,18 @@ const PrivateRoutes = ({ component: Component, ...rest }) => {
   };
   const authContext = useContext(AuthContext);
   const { isAuthenticated, loading, verified } = authContext;
-  console.log(verified)
+
   return (
     <Route
       {...rest}
-      render={props =>
-        !isAuthenticated ? <Redirect to="/auth" /> : verified? <Component {...props}/> : <Redirect to="/verify" /> 
+      render={(props) =>
+        !isAuthenticated ? (
+          <Redirect to="/auth" />
+        ) : verified ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/verify" />
+        )
       }
     />
   );

@@ -8,7 +8,7 @@ const ProductState = (props) => {
     total_quanity: 0,
     items: [],
     filtered: [],
-    loading1: false
+    loading1: false,
   };
   const loadItems = async () => {
     try {
@@ -17,9 +17,7 @@ const ProductState = (props) => {
       await dispatch({ type: "LOAD_PRODUCTS", payload: res.data });
       dispatch({ type: "UnsetLoading" });
       return 0;
-    } catch (e) {
-      console.log(e.response);
-    }
+    } catch (e) {}
   };
   const [state, dispatch] = useReducer(ProductReducer, initialState);
   const search = (product) => {
@@ -45,7 +43,7 @@ const ProductState = (props) => {
         loadItems: loadItems,
         sortByName: sortByName,
         sortByPrice: sortByPrice,
-        laoding1: state.loading
+        laoding1: state.loading,
       }}
     >
       {" "}

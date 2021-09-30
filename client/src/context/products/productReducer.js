@@ -22,12 +22,12 @@ export default (state, action) => {
       // console.log(a);
       return {
         ...state,
-        filtered: a
+        filtered: a,
       };
     case "CLEAR_FILTER":
       return {
         ...state,
-        filtered: []
+        filtered: [],
       };
     case "SORT_BY_PRICE":
       let x = state.items;
@@ -36,25 +36,25 @@ export default (state, action) => {
       });
       return {
         ...state,
-        items: x
+        items: x,
       };
     case "SORT_BY_NAME":
       let y = state.items;
       y.sort((a, b) => (a.name > b.name ? 1 : -1));
       return {
         ...state,
-        items: y
+        items: y,
       };
     case "SetLoading":
-    return{
-      ...state,
-      loading1: true
-    }
+      return {
+        ...state,
+        loading1: true,
+      };
     case "UnsetLoading":
-    return{
-      ...state,
-      loading1: false
-    } 
+      return {
+        ...state,
+        loading1: false,
+      };
     default:
       return state;
   }

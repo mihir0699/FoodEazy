@@ -4,7 +4,7 @@ export default (state, action) => {
       return {
         ...state,
         isAuthenticated: true,
-        loading: false
+        loading: false,
       };
     case "REGISTER_FAIL":
       let x = [];
@@ -21,7 +21,7 @@ export default (state, action) => {
         isAuthenticated: false,
         loading: false,
         user: null,
-        errors: x
+        errors: x,
       };
     case "USER_LOADED":
       return {
@@ -39,7 +39,7 @@ export default (state, action) => {
         ...state,
         isAuthenticated: true,
         current: 1,
-        loading: false
+        loading: true,
       };
     case "LOGIN_FAIL":
       let y = [];
@@ -56,7 +56,7 @@ export default (state, action) => {
         isAuthenticated: false,
         errors: y,
         loading: false,
-        user: null
+        user: null,
       };
     case "AUTH_ERROR":
       return { ...state, isAuthenticated: false, user: null };
@@ -65,17 +65,22 @@ export default (state, action) => {
         ...state,
         isAuthenticated: false,
         loading: false,
-        user: null
+        user: null,
       };
     case "REMOVE_ALERT":
       return {
         ...state,
-        errors: []
+        errors: [],
       };
     case "SET_LOADING":
       return {
         ...state,
-        loading: true
+        loading: true,
+      };
+    case "REMOVE_LOADING":
+      return {
+        ...state,
+        loading: false,
       };
     case "REMOVE_CURRENT":
       return { ...state, current: 0 };

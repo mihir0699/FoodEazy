@@ -25,9 +25,7 @@ const CartState = (props) => {
       dispatch({
         type: "UnsetLoading",
       });
-    } catch (e) {
-      console.log(e.response);
-    }
+    } catch (e) {}
   };
   const clearCart = async () => {
     const config = {
@@ -40,9 +38,7 @@ const CartState = (props) => {
       dispatch({
         type: "CLEAR_CART",
       });
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
   };
   const addProduct = (item) => {
     // console.log(item);
@@ -73,7 +69,6 @@ const CartState = (props) => {
       if (res.status === 200) return 1;
       else return 0;
     } catch (err) {
-      console.log(err.response);
       return 0;
     }
   };

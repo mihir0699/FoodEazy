@@ -11,7 +11,7 @@ import {
   Card,
   Container,
   Row,
-  Col
+  Col,
 } from "react-bootstrap";
 
 const MenuList = (item) => {
@@ -49,19 +49,19 @@ const MenuList = (item) => {
             style={{
               fontFamily: "Mulish",
               fontWeight: "300",
-              fontSize: "1.25rem"
+              fontSize: "1.25rem",
             }}
           >
             {name}
           </Card.Title>
           {type === "Veg" || type === "veg" ? (
             <img
-              src={require('../images/vegetarian-food-symbol.png')}
+              src={require("../images/vegetarian-food-symbol.png")}
               alt="Veg"
             />
           ) : (
             <img
-              src={require('../images/non-vegetarian-food-symbol.png')}
+              src={require("../images/non-vegetarian-food-symbol.png")}
               alt="non-veg"
             />
           )}
@@ -71,7 +71,7 @@ const MenuList = (item) => {
             <span className="WebRupee">&#x20B9;</span> {price}
           </span>
           <Card.Text />
-          <div class="buttons">
+          <div className="buttons">
             {count > 0 ? (
               <Fragment>
                 <button id="minus" className="btn2" onClick={minusHandle}>
@@ -92,8 +92,7 @@ const MenuList = (item) => {
                   fontFamily: "Mulish",
                   lineHeight: "100%",
                   fontSize: "0.9rem",
-                  lineHeight : '100%',
-                  marginTop: '0.5rem'
+                  marginTop: "0.2rem",
                 }}
               >
                 Add
