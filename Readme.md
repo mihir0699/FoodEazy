@@ -7,6 +7,8 @@ Food Eazy, is an online platform to order food and avoiding the hassle of going 
 <br />
 **Demo Video** - ***https://www.youtube.com/watch?v=NvLRpNzKYss***
 
+## :point_down: Support me here!
+<a href="https://www.buymeacoffee.com/mihir0699" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 
 ## Features and Functionalities 😃
@@ -94,5 +96,4 @@ Food Eazy, is an online platform to order food and avoiding the hassle of going 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-
 
