@@ -1,9 +1,9 @@
 # Welcome to Food Eazy! ✨
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://foodeazy.herokuapp.com/)&nbsp;[![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)](https://foodeazy.herokuapp.com/)&nbsp;[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://foodeazy.herokuapp.com/)&nbsp;[![License](https://img.shields.io/badge/license-MIT-brightgreen)](https://foodeazy.herokuapp.com/)&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://food-eazy.onrender.com/)&nbsp;[![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)](https://food-eazy.onrender.com/)&nbsp;[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://food-eazy.onrender.com/)&nbsp;[![License](https://img.shields.io/badge/license-MIT-brightgreen)](https://food-eazy.onrender.com/)&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
 
 Food Eazy, is an online platform to order food and avoiding the hassle of going out or paying in cash. The users can opt for home delivery or take away as per thier choice and can pay thorugh cash or online methods (PayTM). In the times of COVID-19 where social distancing is such an important measure we think our website can help restaurants and customers.
 
-**Project Link** - ***https://foodeazy-web.herokuapp.com/***
+**Project Link** - ***https://food-eazy.onrender.com/***
 <br />
 **Demo Video** - ***https://www.youtube.com/watch?v=NvLRpNzKYss***
 
